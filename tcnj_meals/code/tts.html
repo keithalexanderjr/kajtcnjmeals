@@ -1,0 +1,80 @@
+<!--Name: Keith Alexander Jr -->
+<!--Course: CSC 415 TCNJ Meals-->
+<!--Semester: Fall 2018-->
+<!--Instrucor: Dr. Pulimood-->
+<!--Project Name: TCNJ Meals-->
+<!--Description: This is a food bank proposal website for TCNJ [Not-Affiliated with The College of New Jersey, Unrecognized org]-->
+<!--Filename: tts.html-->
+<!--File Description: Text-to-speech functionality of the TCNJ Meals Website-->
+<!--Last Modified On: 11/26/18-->
+
+<!doctype html> 
+<html>
+
+	<head>
+		<title>TTS</title>
+
+    <!--here is where the developer integrates the css file into the current file-->
+    <link href="main.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+<header>
+		<h1><b>TCNJ Meals</b></h1>
+
+    <!--Navigation Tab Header for user accessibility-->
+		<div class="fh5co-loader"></div>
+		<div id="page">
+  			<nav class="fh5co-nav" role="navigation">
+    			<div class="container-fluid">
+      				<div class="row">
+        				<div class="top-menu">
+        				  <div class="container">
+            				<div class="row">
+              					<div class="col-sm-7 text-left menu-1">
+                					<ul>
+                  						<li class="active"><a href="index.html">Home</a></li>
+                  							<li><a href="page2.html">Donate</a></li>
+                  								<li><a href="page3.html">Contact</a></li>
+                  									<li><a href="page4.html">Student Food Sheets</a></li>
+                  										<li><a href="page5.html">Volunteering</a></li>
+                  											<li><a href="tts.html">Text-to-Speech</a></li>
+                					</ul>
+              					</div>
+              		     	</div>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      	</div>
+     </nav>
+   </header>
+
+   <!-- initialize script to begin tts generation-->
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<!--JavaScript (.js) was implemented and modified to fit users visibility needs-->
+<!--Generate prompt so user knows when and where to email-->
+<script>
+	var say = prompt('Please insert the line that was unclear to read. This will enable text-to-speech');
+	responsiveVoice.speak(say);
+</script>
+
+
+<h2>Computer Accessibility &amp Context Awareness: Visibility</h2>
+
+<p>All webpages must take into account users with disabilities. For those with visibility impairments or similar, and tend to find the text of the webiste to be unclear. Please perform the following steps within the browser to access Text-to-Speech (TTS).</p>
+
+<h3>Steps:</h3>
+<ol>
+	<li>Highlight desired line(s) to be translated into TTS</li>
+	<li>Copy line (CTRL C)</li>
+	<li>Click TTS button. A prompt will then generate</li>
+	<li>Paste (CRTL V) line(s) into prompt text-box and press 'OK' when finished</li>
+	<li>A TTS conversion should be generated</li>
+</ol>
+
+<b><p>Please Note: After selecting 'CANCEL' when prompt appears, it can be reaccessed by simply pressing the 'Text-to-Speech' button</p></b>
+</body>
+</html>
